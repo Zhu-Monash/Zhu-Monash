@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australian health expenditure by area and source</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    <style>
+        .content {
+            display: flex;
+            border: 1px solid lightgray;
+        }
+
+        .content span {
+            padding: 1rem;
+            height: 1rem;
+            line-height: 1rem;
+        }
+
+        h1 {
+            background-color: #385659;
+            padding: 0;
+            margin: 0;
+            height: 60px;
+            line-height: 60px;
+            color: white;
+        }
+
+        p,
+        h3 {
+            margin-left: 20px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="home">
+
+        <h1>
+            Australian health expenditure by area and source
+
+        </h1>
+
+        <section style="display: flex;">
+            <div style="border: 1px solid gainsboro;">
+                <div id="vis"></div>
+                <div class="content">
+                    <img src="png1.png" alt="">
+                    <div>
+                        <h3>Government expenditure in each state</h3>
+                        <p>
+
+                            In terms of expenditure in all states in Australia, New South Wales has the highest
+                            proportion,
+                            reaching 32.6%.
+                            This is followed by Victoria with 24.5%
+                            Queensland was third with 19.6%.
+                            These three states accounted for 76% of total expenditures</p>
+                    </div>
+
+                </div>
+
+
+                <div class="content">
+                    <img src="png2.png" alt="">
+                    <div>
+                        <h3> Expenditure trends (1997 to 2011)
+                        </h3>
+                        <p>
+
+                            NSW expenditures have always accounted for a relatively high proportion of total Australian
+                            government expenditures, and the gap with the second and third states has maintained a
+                            steady upward trend.</p>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <img src="png3.png" alt="">
+                    <div>
+                        <h3> Expenditure Area
+                        </h3>
+                        <p>
+
+
+
+                            The top three expenditure areas are public hospital, medical services, and private hospital,
+                            highlighting the government's emphasis on people's health care
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="content">
+                    <img src="png4.png" alt="">
+                    <div>
+                        <h3> Expenditure category
+
+                        </h3>
+                        <p>
+
+
+                            In the category of government expenditure, Australian government expenditure accounts for
+                            the majority. State government or local government is relatively small.
+                            Especially in the field of healthcare, most of them are government-led
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div id="line" style="border: 1px solid gainsboro;"></div>
+
+        </section>
+    </div>
+
+    <script src="index.js">
+
+
+    </script>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
